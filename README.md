@@ -184,6 +184,25 @@ If you're using Windows and experiencing issues with the command mode, try this 
 cmd /k npx cursor-azure-devops-mcp
 ```
 
+### mcp.json installation
+
+```
+    "azure-devops": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "cursor-azure-devops-mcp",
+        "--azure-org-url",
+        "https://your-organization.visualstudio.com",
+        "--azure-token",
+        "your-personal-access-token",
+        "--azure-project",
+        "your-project"
+      ]
+    }
+```
+
 ### Using in Your Code
 
 ```javascript
